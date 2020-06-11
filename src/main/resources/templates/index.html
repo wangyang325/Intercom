@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <script src="./check.js"></script>
+</head>
+<body>
+<h4>Assignment for Intercom (Yang Wang)</h4>
+<h5>##--------------- Process by file ----------------------</h5>
+<form method="POST" onsubmit="return checkInput(1)" enctype="multipart/form-data" action="/upload">
+    <h5>Center location:</h5>
+    <label>Longitude: </label><input type="text" id="longitude" , name="longitude" value="" th:value="${longitude}">
+    <br>
+    <label>Latitude  : </label><input type="text" id="latitude" , name="latitude" value="" th:value="${latitude}">
+    <h5>Choose Customer File：</h5><input type="file" name="file" id="file"/><input type="submit" value="Upload"/>
+</form>
+<h5>##--------------- Process by text ----------------------</h5>
+<h5>Customer List (Json) -> copy customer list to here</h5>
+<form onsubmit="return checkInput(0)" id="form" method="post" action="/customers">
+    <h5>Center location:</h5>
+    <label>Longitude: </label><input type="text" id="longitude1" , name="longitude" value="" th:value="${longitude}">
+    <br>
+    <label>Latitude  : </label><input type="text" id="latitude1" , name="latitude" value="" th:value="${latitude}">
+    <br>
+    <br>
+    <textarea style="width:600px;height:100px;" id="customers" name="customers" value=""
+              th:value="${customers}"></textarea>
+    <br>
+    <button type="submit" id="submit">Process</button>
+</form>
+<h5>##--------------- Technologies ----------------------</h5>
+<h6>** Development-> framework:StringBoot, log:Log4j2</h6>
+<h6>** Deployment -> docker on AWS</h6>
+</body>
+</html>
