@@ -1,11 +1,13 @@
-# Intercom
-Intercom Assignment
+# Intercom Assignment 
 
 GitHub:
 https://github.com/wangyang325/Intercom/
 
 Git:
 https://github.com/wangyang325/Intercom.git
+
+# Rroudest Archievement
+Github: ./ProudestAchievement_YangWang.pdf
 
 # Technologies
   1. Springboot
@@ -22,16 +24,16 @@ https://github.com/wangyang325/Intercom.git
 4. I plan to split the index (public) and calculate (private) modules to two microservices and deploy them in a docker bridge network to protect the calculate module in future.
 
 5. Because the time reason, did not to deal with the performance issue.
-  
-  Some suggestions for performance:
+    
+    Some suggestions for performance:
 
-  a. deploy more services to increase the process ability and availability. (distributed system).
+    a. deploy more services to increase the process ability and availability. (distributed system).
 
-  b. use Message queue tools (Kafka) to distribute the data to services to avoid the data losing.
+    b. use Message queue tools (Kafka) to distribute the data to services to avoid the data losing.
 
-  c. use map and reduce ideas to split the data. (big data).
+    c. use map and reduce ideas to split the data. (big data).
 
-  d. use multi-thread to process the data on a service. (one service).
+    d. use multi-thread to process the data on a service. (one service).
 
 # Run (jre 1.8) on local
 java -jar assignment-1.0.jar
