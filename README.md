@@ -65,6 +65,11 @@ Cases:
     4. One record (Normal).
     
     5. Two or more records (Normal).
+      
+       5.1 No hit
+       5.2 One hit
+       5.3 all hits
+       5.4 partial hits
     
     6. Performance test (Did not do it for the time reason).
 
