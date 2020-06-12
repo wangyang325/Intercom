@@ -36,7 +36,9 @@ Github: ./ProudestAchievement_YangWang.pdf
     d. use multi-thread to process the data on a service. (one service).
 
 # Run (jre 1.8) on local
+Copy the assignment-1.0.jar (Github:./assignment-1.0.jar) to local.
 java -jar assignment-1.0.jar
+(Jre 1.8 needed)
 
 Two ways to use:
   1. Upload the customer list by file.
