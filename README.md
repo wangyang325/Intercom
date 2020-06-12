@@ -6,7 +6,7 @@ https://github.com/wangyang325/Intercom/
 Git:
 https://github.com/wangyang325/Intercom.git
 
-# Rroudest Archievement
+# Proudest Archievement
 Github: ./ProudestAchievement_YangWang.pdf
 
 # Technologies
