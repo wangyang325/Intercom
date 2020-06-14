@@ -1,13 +1,31 @@
-# Intercom Assignment 
+### Intercom Assignment 
 
+# Question
+We have some customer records in a text file (customers.txt) -- one customer per line, JSON lines formatted. We want to invite any customer within 100km of our Dublin office for some food and drinks on us. Write a program that will read the full list of customers and output the names and user ids of matching customers (within 100km), sorted by User ID (ascending).
+
+    •	You must use the first formula from this Wikipedia article to calculate distance. Don't forget, you'll need to convert degrees to radians.
+  
+    •	The GPS coordinates for our Dublin office are 53.339428, -6.257664.
+  
+    •	You can find the Customer list here.
+
+# Answer
 GitHub:
+
 https://github.com/wangyang325/Intercom/
 
 Git:
+
 https://github.com/wangyang325/Intercom.git
 
+Demo:
+
+http://34.247.85.101/index
+
 # Proudest Archievement
-Github: ./ProudestAchievement_YangWang.pdf
+Github:
+
+./ProudestAchievement_YangWang.pdf
 
 # Technologies
   1. Springboot
@@ -37,39 +55,50 @@ Github: ./ProudestAchievement_YangWang.pdf
 
 # Run (jre 1.8) on local
 Copy the assignment-1.0.jar (Github:./assignment-1.0.jar) to local.
-java -jar assignment-1.0.jar
-(Jre 1.8 needed)
+
+java -jar assignment-1.0.jar(Jre 1.8 needed)
 
 Two ways to use:
   1. Upload the customer list by file.
   2. Copy the list to web page.
 
 Demo:
+
 http://34.247.85.101/index
 
 # Deployment on AWS
 used Docker to deploy on AWS
+
 Restful API -> AWS (EC2:Docker server) 
 
 # Test
 UT: I used Junit to make some tests for the service module.
+
 IT: Tested it on AWS.
+
 Cases:
 
-    1. Input checks (Normal).
+    1. Input checks (Normal-Special).
     
-    2. No data (Normal).
+    2. No data (Normal-Special).
     
     3. Wrong format file or text (Error).
     
-    4. One record (Normal).
+    4. Wrong center location. (Normal-Special)
     
-    5. Two or more records (Normal).
+    5. One record (Normal).
+    
+    6. Two or more records (Normal).
       
-       5.1 No hit
-       5.2 One hit
-       5.3 all hits
-       5.4 partial hits
+       6.1 No hit
+       6.2 One hit
+       6.3 all hits
+       6.4 partial hits
     
-    6. Performance test (Did not do it for the time reason).
-
+    7. Performance test (Did not do it for the time reason).
+      
+       7.1 standard test
+       7.2 Load test
+       7.3 stress test
+       7.4 statable test
+       7.5 concurrent test
